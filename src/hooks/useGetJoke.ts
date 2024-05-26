@@ -6,10 +6,7 @@ export const useJoke = () => {
 	const query = useQuery<IJoke>({
 		queryKey: ['jokes'],
 		queryFn: () => jokeService.getJoke(),
-    retry: 3
+		retry: 3,
 	})
 	return query
-	// if (query.isSuccess) {
-		// return query
-	// } else return null
 }

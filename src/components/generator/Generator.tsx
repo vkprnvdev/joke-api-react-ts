@@ -1,6 +1,6 @@
-import { GeneratorContent } from './generator-components/GeneratorContent'
-import { GeneratorHeader } from './generator-components/GeneratorHeader'
-import { useJoke } from '../../hooks/useJoke'
+import { GeneratorContent } from './GeneratorContent'
+import { GeneratorHeader } from './GeneratorHeader'
+import { useJoke } from '../../hooks/useGetJoke'
 import { useState } from 'react'
 
 export function Generator() {

@@ -1,4 +1,4 @@
-import { IJoke } from '../../../types/type-joke'
+import { IJoke } from '../../types/type-joke'
 import { UseQueryResult } from '@tanstack/react-query'
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 export function GeneratorContent({ query, btn, setBtn }: Props) {
 	return (
 		<>
-			{query.isPending ? (
+			{query.isFetching ? (
 				<div className='flex justify-center py-4'>
 					<img src='/loading.gif' alt='loading' />
 				</div>

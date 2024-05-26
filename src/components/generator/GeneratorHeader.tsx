@@ -11,6 +11,7 @@ export function GeneratorHeader({ setBtn }: Props) {
 
 	const reload = async () => {
 		setDisabled(true)
+		setBtn(true)
 		await queryClient.invalidateQueries(
 			{
 				queryKey: ['jokes'],
@@ -18,7 +19,6 @@ export function GeneratorHeader({ setBtn }: Props) {
 			},
 			{ throwOnError: true, cancelRefetch: false }
 		)
-		setBtn(true)
 		setDisabled(false)
 	}
 
