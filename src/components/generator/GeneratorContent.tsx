@@ -1,4 +1,4 @@
-import { IJoke } from '../../types/type-joke'
+import { IJoke } from '../../types/IJoke'
 import { UseQueryResult } from '@tanstack/react-query'
 
 type Props = {

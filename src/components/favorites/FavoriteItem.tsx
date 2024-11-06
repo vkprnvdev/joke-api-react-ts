@@ -18,7 +18,7 @@ export function FavoriteItem({ number, firstString, secondString }: Props) {
 			</div>
 			<div className='flex items-center flex-col bg-stone-900 rounded-b-xl mt-1 py-3 px-5 gap-1 text-lg text-center'>
 				<p>{firstString}</p>
-				<p>{secondString}</p>
+				<p className='font-bold'>{secondString}</p>
 			</div>
 		</div>
 	)

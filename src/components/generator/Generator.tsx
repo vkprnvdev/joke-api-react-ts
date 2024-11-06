@@ -9,7 +9,7 @@ export function Generator() {
 
 	return (
 		<div className=' min-w-36 bg-stone-900 rounded-md'>
-			<GeneratorHeader setBtn={setBtn}/>
+			<GeneratorHeader query={query} setBtn={setBtn}/>
 			<GeneratorContent query={query} btn={btn} setBtn={setBtn} />
 		</div>
 	)

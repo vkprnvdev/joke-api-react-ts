@@ -1,5 +1,6 @@
 import { Bookmark } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link } from '@tanstack/react-router'
+// import { Link } from 'react-router-dom'
 
 type Props = { active: string }
 

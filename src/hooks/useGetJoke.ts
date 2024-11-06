@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import jokeService from '../services/joke.service'
-import { IJoke } from '../types/type-joke'
+import { IJoke } from '../types/IJoke'
 
 export const useJoke = () => {
 	const query = useQuery<IJoke>({
